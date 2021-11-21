@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>WeDesign 2.0</title>
+
+<style>
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 150em;
+  }
+  .media-object {
+    margin-right: .4em;
+    font-size: 6em;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }
+ .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+.dress1 {
+    background-image: url("bp.png");
+	font-size:20px;
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+	color:white;
+  }
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+  }
+  .form-row > input {
+    flex: 1;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
+  .form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
+
+p {
+    padding: 25px;
+    background-image: url("bp.png");
+  }
+div {
+    padding: 30px;
+    border: 2px double white;
+	background-image: url("bp.png");
+  }
+ p{
+  text-align: center;
+  font-style:italic;
+  font-size:25px;
+  color:white;
+}
+.l1 {
+    text-align:left;
+	color:white;
+	padding:4px;
+}
+</style>
+</head>
+<body>
+<p style="text-align:center;"><img src="logo1.jpg" width="700" height="300" alt="";></p>
+<p style="text-align:center";><i>Get the Look you Desire......</i></p>
+<p>Are you tired of looking for a perfect dress for the perfect event?<br> Say no more. Glam Look is here to present you the perfect 
+look for your event.</p>
+<div>
+<img src="ph1.jpg" width="350" height="400" alt="">
+<img src="ph2.jpg" width="350" height="400" alt="">
+<img src="ph3.jpg" width="350" height="400" alt="">
+<img src="ph4.jpg" width="350" height="400" alt="">
+</div>
+
+<p style="text-align:left";><b>To make your orders, kindly fill the following form and your dress will be delivered within 10 days</b>
+<form action="/html/tags/html_form_tag_action.cfm" target="_blank" method="get">
+<p class="l1"><label>First name: <input type="text" name="first_name" maxlength="100" style="width:120px;"></label></p>
+<p class="l1"><label>Last name: <input type="text" name="last_name" maxlength="100" style="width:120px;"></label></p>
+<script>
+function displayMessage(firstName) {
+    alert("Hello " + firstName + ", hope you like JavaScript functions!");
+}
+function analyzeColor(myColor) {
+	switch (myColor)
+	{
+	case "Blue":
+		alert("Like a Sapphire!");
+		break
+	case "Red":
+		alert("Like a Ruby!");
+		break
+	default:
+		alert("Please Pick a Color");
+    }
+}
+function displayMessage(Embroidery) {
+switch (Material)
+	{
+	case "Please":
+		alert("Great");
+		break
+	case "Stones":
+		alert("Awesome");
+		break
+	default:
+		alert("Please pick Your Decoration!");
+    }
+}
+</script>
+<form action="/html/tags/html_form_tag_action.cfm" target="_blank" method="get">
+<p class="l1"><label>Color: <input type="text" name="color_fabric" maxlength="100" style="width:120px;"></label></p>
+<p class="l1"><label>Embroidery: <input type="text" name="emb_droidery" maxlength="100" style="width:120px;"></label></p>
+<input type="submit" value="Submit">
+</form>
+<form><i>
+  <ul class="dress1">
+    <li class="form-row">
+      <label for="name">Email Address</label>
+      <input type="text" id="name">
+    </li>
+    <li class="form-row">
+      <label for="townborn">Address</label>
+      <input type="text" id="townborn">
+    </li>
+    <li class="form-row">
+      <label for="email">Any Other Queries</label>
+      <input type="email" id="email">
+    </li>
+    <li class="form-row">
+      <button type="submit">Submit</button>
+    </li>
+  </ul></i>
+</form>
+<main class="cards">
+  <article class="card">
+    <img src="sarre.png" alt="">
+    <div class="text">
+      <h3 style="color:white";>Sarees</h3>
+      <p>A traditional attire which is in the homes of every women in India</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="lehenga.jpg" alt="">
+    <div class="text">
+      <h3 style="color:white";>Decorative Lehengas</h3>
+      <p>Shop Lehengas based on the material and design of your choice.</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="choli.jpg" alt="">
+    <div class="text">
+      <h3 style="color:white";>Choli</h3>
+      <p>Variety of Designs only from our best designers.(Ready-made and Material).</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="chudithar.jpg" alt="">
+    <div class="text">
+      <h3 style="color:white";>Classic Chudithar</h3>
+      <p>A everyday go-to look for all women. We all can agree on that!</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="gowns.jpg" alt="">
+    <div class="text">
+      <h3 style="color:white";>Gowns</h3>
+      <p>Built with multiple layers of clothing to give the perfect fluffy finish</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="bridal.jpg" alt="">
+    <div class="text">
+      <h3 style="color:white";>Bridal</h3>
+      <p>Wedding..Most important day in a Girl's Life. Find your perfect look here....</p>
+      <button>Shop Here</button>
+    </div>
+  </article>
+</main>
+<div class="media">
+  <div style="color:white";class="media-object">&phone;</div>
+  <div class="media-body">
+    <h3 style="color:white";class="media-heading">For More Details</h3>
+    <p>Reach out to us through our mobile number: +91 55773 38899<br>Our instagram handle:@glam_look<br>
+	Our Facebook page: @GlamLook<br> Email address: glam.look@gmail.com
+	</p>
+  </div>
+</div>
+
+
+</p>
+
+
+</body>
+</html>
+
